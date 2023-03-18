@@ -24,15 +24,14 @@ class Vector(object):
 
     def skal(self, vector):
         return self.x * vector.x + self.x * vector.y + self.x * vector.z \
-        + self.y * vector.x + self.y * vector.y + self.y * vector.z \
-        + self.z * vector.x + self.z * vector.y + self.z * vector.z
+            + self.y * vector.x + self.y * vector.y + self.y * vector.z \
+            + self.z * vector.x + self.z * vector.y + self.z * vector.z
 
     def vek(self, vector):
         self.x = self.y * vector.z - self.z * vector.y
         self.y = self.x * vector.z - self.z * vector.x
         self.z = self.x * vector.y - self.y * vector.x
         return self.x, self.y, self.z
-
 
 
 Vector1 = Vector(2, 3, 4)
